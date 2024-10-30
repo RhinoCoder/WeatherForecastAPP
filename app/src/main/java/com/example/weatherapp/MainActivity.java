@@ -172,10 +172,8 @@ public class MainActivity extends AppCompatActivity
     //teatone
     private void getWeatherInfo(String cityName)
     {
-        //Our API token @teatone
-        //n add
-        //api.weatherapi.com/v1/forecast.json?key=8059a6a511b949b38a9182509222511&q=London&days=1&aqi=yes&alerts=yes
-        String url = "http://api.weatherapi.com/v1/forecast.json?key=8059a6a511b949b38a9182509222511&q="+cityName +"+&days=1&aqi=yes&alerts=yes";
+        //Enter your API key there.
+        String url = "apiKey"+cityName +"+&days=1&aqi=yes&alerts=yes";
         cityNameTV.setText(cityName);
         RequestQueue requestQueue = Volley.newRequestQueue(MainActivity.this);
 
